@@ -4,15 +4,23 @@
 \alias{clean_col_name}
 \title{A Cat Function}
 \usage{
-clean_col_name(col)
+clean_col_name(col, lowercase = TRUE, uppercase_id = TRUE, prefix = FALSE)
 }
 \arguments{
 \item{col}{The column name you're cleaning}
+
+\item{lowercase}{Convert the column name to lower case. Default: True}
+
+\item{uppercase_id}{Make any instance of "id" uppercase. Default: True}
+
+\item{prefix}{Prepend the string in prefix. Defaults FALSE}
 }
 \description{
-This function allows you to express your love of cats.
+This function cleans column names
 }
 \examples{
 clean_col_name()
 }
-\keyword{cats}
+\keyword{cleaning}
+\keyword{column}
+\keyword{names}
