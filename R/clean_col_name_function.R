@@ -28,7 +28,7 @@ clean_col_name <- function(col,lowercase = TRUE, uppercase_id = TRUE, prefix = F
                   "ID")
   }
 
-  if(!prefix) {
+  if(prefix != FALSE) {
     new_col_name <-
       paste0(prefix,new_col_name)
   }
